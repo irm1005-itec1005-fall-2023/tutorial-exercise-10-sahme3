@@ -54,15 +54,32 @@ const pokemons = [
 
 
 // 1. Display the Pokemons that have a level between 30 and 50
-
-
+for (let i=0; i<pokemons.length; i++) {
+  if (pokemons[i].level >= 30 && pokemons[i].level <= 50) {
+    console.log(pokemons[i].name);
+  }
+}
 // 2. Display the pokemons that have an ability called "Run Away"
+for (let i=0; i<pokemons.length; i++){
+  if (pokemons[i].abilities === "Run Away") {
+    console.log(pokemons[i].name);
+  }
+}
 
-
-// 3. Display how many Pokemons have the type "Normal"
-
+normalTypeCount = 0;
+for (let i=0; i<pokemons.length; i++) {
+  if (pokemons[i].type === 'Normal') {
+    normalTypeCount++;
+  }
+}
+console.log(normalTypeCount, "Normal type Pokemons");
 
 // 4. Display the names of all of pokemons that have a type of "Psychic"
+for (let i=0; i<pokemons.length; i++) {
+  if (pokemons[i].type === 'Psychic') {
+    console.log(pokemons[i].name);
+  }
+}
 
 
 // 5. Display the types of Pokemon and the number of Pokemons that have that type
@@ -70,8 +87,65 @@ const pokemons = [
 //   Psychic - 2,
 //   Normal - 3, etc.
 
+
 // Create an array of all the types
 // eg: { type: 'Normal', count: 3 }
 
 
 // Display the results
+
+normalTypeCount = 0;
+for (let i=0; i<pokemons.length; i++) {
+  if (pokemons[i].type === 'Normal') {
+    normalTypeCount++;
+  }
+}
+console.log("Count:", normalTypeCount, "Type: Normal");
+
+psychicTypeCount = 0;
+for (let i=0; i<pokemons.length; i++) {
+  if (pokemons[i].type === 'Psychic') {
+    psychicTypeCount++;
+  }
+}
+console.log("Count:", psychicTypeCount, "Type: Psychic");
+
+ghostTypeCount = 0;
+for (let i=0; i<pokemons.length; i++) {
+  if (pokemons[i].type === 'Ghost') {
+    ghostTypeCount++;
+  }
+}
+console.log("Count:", ghostTypeCount, "Type: Ghost");
+
+waterTypeCount = 0;
+for (let i=0; i<pokemons.length; i++) {
+  if (pokemons[i].type === 'Water') {
+    waterTypeCount++;
+  }
+}
+console.log("Count:", waterTypeCount, "Type: Water");
+
+grassTypeCount = 0;
+for (let i=0; i<pokemons.length; i++) {
+  if (pokemons[i].type === 'Grass') {
+    grassTypeCount++;
+  }
+}
+console.log("Count:", grassTypeCount, "Type: Grass");
+
+fireTypeCount = 0;
+for (let i=0; i<pokemons.length; i++) {
+  if (pokemons[i].type === 'Fire') {
+    fireTypeCount++;
+  }
+}
+console.log("Count:", fireTypeCount, "Type: Fire");
+
+electricTypeCount = 0;
+for (let i=0; i<pokemons.length; i++) {
+  if (pokemons[i].type === 'Electric') {
+    electricTypeCount++;
+  }
+}
+console.log("Count:", electricTypeCount, "Type: Electric");
