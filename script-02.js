@@ -42,7 +42,7 @@ pokeList = document.querySelector('.poke-items');
 // 2. Loop through the array of pokemons items
 // For each item:
 for (let i = 0; i < pokemons.length; i++) {
-  const pokemonListItem = document.createElement("li");
-  pokemonListItem.textContent = pokemons[i].name;
-  pokeList.appendChild(pokemonListItem);
+   tempListItem = document.createElement("li");
+  tempListItem.textContent = pokemons[i].name;
+  pokeList.appendChild(tempListItem);
 }
